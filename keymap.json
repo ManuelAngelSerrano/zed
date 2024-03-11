@@ -1,0 +1,39 @@
+[
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in normal & visual mode
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work only in normal mode
+      // "down": ["workspace::SendKeystrokes", "4 j"]
+      // "up": ["workspace::SendKeystrokes", "4 k"]
+      ", .": "command_palette::Toggle",   // ,. command palette    
+      ", c i": "editor::ToggleComments",  // ,ci toggle comments -> No sé si funcionará...
+      ", w": "workspace::Save",           // ,w save document
+      ", e": "workspace::Open"            // ,e open file
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      // visual, visual line & visual block modes
+      ", .": "vim::NormalBefore" // remap ,. in visual mode to escape.
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      // put key-bindings here if you want them to work in insert mode
+      // e.g.
+      // "º º": "vim::NormalBefore" // remap jj in insert mode to escape.
+      "j j": "vim::NormalBefore", // remap jj in insert mode to escape.
+      "j k": "vim::NormalBefore", // remap jk in insert mode to escape.
+      "k j": "vim::NormalBefore", // remap kj in insert mode to escape.
+      ", .": "vim::NormalBefore"  // remap ,. in insert mode to escape.
+    }
+  }
+]
