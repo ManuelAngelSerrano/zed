@@ -1,9 +1,0 @@
-Extensions
-----------
-
-Themes
-- Zedokai
-- Dracula
-
-Herramientas
-- 

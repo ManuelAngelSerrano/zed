@@ -1,0 +1,17 @@
+Extensions
+----------
+
+Themes
+- Material Icon Theme
+- Dracula
+- Colored Zed Icon Theme
+- Zedokai
+- KTRZ Monokai Theme
+- Monokai Nebula
+- Monokai Original
+
+
+Herramientas
+- HTML
+- Java
+- Elm
